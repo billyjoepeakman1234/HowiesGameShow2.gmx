@@ -10,7 +10,7 @@ if (fire) {
     if (clipAmmo > 0) {
     
         cooldown = global.weaponArray[global.weapon, 15];
-        obj_Camera.shake = 10;
+        obj_Camera.shake = 5;
         
         //Bullet Creation
         var b_x = x, b_y = y;
@@ -38,6 +38,11 @@ if (fire) {
         
         audio_play_sound(global.weaponArray[global.weapon, 5], 1, false);
         effect_create_above(ef_smokeup, start_x, start_y, .1, c_gray);
+        
+        //Shoot Animation
+        sprite_index = global.weaponArray[global.weapon, 17];
+        image_speed = 0.3;
+        alarm[1] = 5;
         
         clipAmmo -= 1;
     

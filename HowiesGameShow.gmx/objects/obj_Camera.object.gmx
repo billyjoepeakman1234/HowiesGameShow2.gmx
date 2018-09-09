@@ -31,7 +31,7 @@ shake = 0;
 depth = -y;
 
 //Set GUI Size
-display_set_gui_size(view_wview, view_hview);
+display_set_gui_size(1280, 720);
 
 //Graphics
 texture_set_interpolation(true);

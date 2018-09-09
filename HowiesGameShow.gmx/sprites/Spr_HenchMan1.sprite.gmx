@@ -20,6 +20,6 @@
   <width>45</width>
   <height>45</height>
   <frames>
-    <frame index="0">images\Spr_HenchMan1_0.png</frame>
+    <frame index="0">images\spr_HenchMan1_0.png</frame>
   </frames>
 </sprite>

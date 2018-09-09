@@ -15,51 +15,39 @@
     <sprite>sprites\spr_TEMP_Wallz</sprite>
     <sprites name="Player">
       <sprites name="Gun/Arm Variants">
-        <sprites name="Glock">
-          <sprite>sprites\Spr_Glock_Onehand</sprite>
-        </sprites>
-        <sprites name="Deagle">
-          <sprite>sprites\Spr_Deagle_Onehand</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="Deagle">
+        <sprite>sprites\spr_Glock_Onehand</sprite>
+        <sprite>sprites\spr_Deagle_Onehand</sprite>
         <sprite>sprites\spr_Player_Deagle</sprite>
-      </sprites>
-      <sprites name="Glock">
         <sprite>sprites\spr_Player_Glock</sprite>
       </sprites>
       <sprites name="Animations">
         <sprites name="GlockAnims">
-          <sprite>sprites\Spr_Glockshoot</sprite>
-          <sprite>sprites\Spr_GlockReload</sprite>
+          <sprite>sprites\spr_GlockShoot</sprite>
+          <sprite>sprites\spr_GlockReload</sprite>
         </sprites>
         <sprites name="DeagleAnims">
-          <sprite>sprites\Spr_Deagleshoot</sprite>
-          <sprite>sprites\Spr_DeagleReload</sprite>
+          <sprite>sprites\spr_DeagleShoot</sprite>
+          <sprite>sprites\spr_DeagleReload</sprite>
         </sprites>
         <sprites name="DuelWieldPistols">
-          <sprites name="DeagleAnims">
-            <sprite>sprites\Spr_DuelDeagleShoot</sprite>
-          </sprites>
-          <sprites name="GlockAnims">
-            <sprite>sprites\Spr_DuelGlockShoot</sprite>
-          </sprites>
+          <sprite>sprites\spr_DuelDeagleShoot</sprite>
+          <sprite>sprites\spr_DuelGlockShoot</sprite>
         </sprites>
         <sprites name="Walk">
-          <sprite>sprites\Spr_GlockWalk</sprite>
-          <sprite>sprites\Spr_DeagleWalk</sprite>
-          <sprite>sprites\Spr_Deaglex2Walk</sprite>
-          <sprite>sprites\Spr_Glockx2Walk</sprite>
+          <sprite>sprites\spr_GlockWalk</sprite>
+          <sprite>sprites\spr_DeagleWalk</sprite>
+          <sprite>sprites\spr_Deaglex2Walk</sprite>
+          <sprite>sprites\spr_Glockx2Walk</sprite>
         </sprites>
       </sprites>
       <sprites name="Feet">
-        <sprite>sprites\Spr_Feet</sprite>
+        <sprite>sprites\spr_Feet</sprite>
       </sprites>
       <sprite>sprites\spr_Bullet_Mask</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="HowiesHenchMen">
-        <sprite>sprites\Spr_HenchMan1</sprite>
+        <sprite>sprites\spr_HenchMan1</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -68,6 +56,7 @@
   <scripts name="scripts">
     <script>scripts\scr_PlayerFire.gml</script>
     <script>scripts\scr_WeaponArray.gml</script>
+    <script>scripts\scr_PlayerAnimate.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
@@ -76,7 +65,7 @@
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
-      <object>objects\obj_Plyr_Feet</object>
+      <object>objects\obj_Player_Feet</object>
     </objects>
     <objects name="Level Assets">
       <object>objects\obj_Wall</object>
