@@ -73,6 +73,10 @@
     <objects name="Bullets">
       <object>objects\obj_Bullet_Deagle</object>
       <object>objects\obj_Bullet_Glock</object>
+      <object>objects\obj_EnemyBullet_1</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_HenchMan_1</object>
     </objects>
   </objects>
   <rooms name="rooms">
