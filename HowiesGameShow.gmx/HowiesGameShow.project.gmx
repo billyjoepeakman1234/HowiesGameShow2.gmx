@@ -50,6 +50,13 @@
         <sprite>sprites\spr_HenchMan1</sprite>
       </sprites>
     </sprites>
+    <sprites name="StageAssets"/>
+    <sprite>sprites\Spr_StageFloorRightFront</sprite>
+    <sprite>sprites\Spr_StageFloorFront</sprite>
+    <sprite>sprites\Spr_StageFloorL</sprite>
+    <sprite>sprites\Spr_StageFloorLeftFront</sprite>
+    <sprite>sprites\Spr_StageFloorMid</sprite>
+    <sprite>sprites\Spr_StageFloorR</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -69,6 +76,14 @@
     </objects>
     <objects name="Level Assets">
       <object>objects\obj_Wall</object>
+      <objects name="StageAssets">
+        <object>objects\obj_StageFloorRightFront</object>
+        <object>objects\obj_StageFloorFront</object>
+        <object>objects\obj_StageFloorL</object>
+        <object>objects\obj_StageFloorLeftFront</object>
+        <object>objects\obj_StageFloorMid</object>
+        <object>objects\obj_StageFloorR</object>
+      </objects>
     </objects>
     <objects name="Bullets">
       <object>objects\obj_Bullet_Deagle</object>
