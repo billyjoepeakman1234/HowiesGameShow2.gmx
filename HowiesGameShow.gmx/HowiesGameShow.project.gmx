@@ -13,6 +13,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_TEMP_Wallz</sprite>
+    <sprite>sprites\spr_Barrier</sprite>
     <sprites name="Player">
       <sprites name="Gun/Arm Variants">
         <sprite>sprites\spr_Glock_Onehand</sprite>
@@ -44,46 +45,42 @@
         <sprite>sprites\spr_Feet</sprite>
       </sprites>
       <sprite>sprites\spr_Bullet_Mask</sprite>
+      <sprite>sprites\spr_Blood</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="HowiesHenchMen">
         <sprite>sprites\spr_HenchMan1</sprite>
       </sprites>
     </sprites>
-    <sprites name="StageAssets"/>
-    <sprite>sprites\Spr_StageFloorRightFront</sprite>
-    <sprite>sprites\Spr_StageFloorFront</sprite>
-    <sprite>sprites\Spr_StageFloorL</sprite>
-    <sprite>sprites\Spr_StageFloorLeftFront</sprite>
-    <sprite>sprites\Spr_StageFloorMid</sprite>
-    <sprite>sprites\Spr_StageFloorR</sprite>
+    <sprites name="HUD">
+      <sprite>sprites\spr_HealthRed</sprite>
+      <sprite>sprites\spr_HealthGreen</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b_StageTiles</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_PlayerFire.gml</script>
     <script>scripts\scr_WeaponArray.gml</script>
     <script>scripts\scr_PlayerAnimate.gml</script>
+    <script>scripts\scr_CreateBlood.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
       <object>objects\obj_Camera</object>
       <object>objects\obj_Parent</object>
+      <object>objects\obj_BloodController</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_Player</object>
       <object>objects\obj_Player_Feet</object>
+      <object>objects\obj_Blood</object>
     </objects>
     <objects name="Level Assets">
       <object>objects\obj_Wall</object>
-      <objects name="StageAssets">
-        <object>objects\obj_StageFloorRightFront</object>
-        <object>objects\obj_StageFloorFront</object>
-        <object>objects\obj_StageFloorL</object>
-        <object>objects\obj_StageFloorLeftFront</object>
-        <object>objects\obj_StageFloorMid</object>
-        <object>objects\obj_StageFloorR</object>
-      </objects>
+      <object>objects\obj_Barrier</object>
     </objects>
     <objects name="Bullets">
       <object>objects\obj_Bullet_Deagle</object>
