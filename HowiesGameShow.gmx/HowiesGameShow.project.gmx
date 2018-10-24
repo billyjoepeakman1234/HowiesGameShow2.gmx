@@ -59,6 +59,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\b_StageTiles</background>
+    <background>background\b_Tiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
